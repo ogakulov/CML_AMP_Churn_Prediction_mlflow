@@ -1,9 +1,9 @@
 name: ML Churn Prototype
 description: Prototype to demonstrate building a churn model on CML
 author: Cloudera Inc.
-specification_version: 1.0
+specification_version: 1.1
 prototype_version: 2.0
-date: "2022-03-25"
+date: "2024-11-12"
 
 environment_variables:
   DATA_LOCATION:
@@ -27,10 +27,9 @@ feature_dependencies:
 
 runtimes:
   - editor: Workbench
-    kernel: Python 3.7
+    kernel: Python 3.9
     edition: Standard
-    version: 2022.11
-    addons: ["Spark 2.4.8 - CDE 1.17 - HOTFIX-1"]
+    addons: ["Spark 3.2.3 - CDE 1.20.3 - HOTFIX-2"]
 
 tasks:
   - type: run_session
